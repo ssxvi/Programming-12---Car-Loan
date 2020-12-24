@@ -12,7 +12,12 @@ It validates the loan, and calculates how much monthly is needed.
 Elements used!
 static variables
 system.err.println
-syste
+scanners
+extra functions / abtraction
+do/while
+try/catch/finally
+
+maybe others idk what's considered extra at this point idk 90% sure I'll redo this with jFrame sorry Mr. V
 */
 
 import java.util.Scanner;
@@ -117,19 +122,19 @@ public class CarLoan{
     if(checkLoan(loan.carLoan)&&checkLoanLength(loan.loanLength)&&checkDownPayment(loan.downPayment, loan.carLoan)){
       //Confirmation
       System.out.println("Successful Loan!!");
-      System.out.println("Your monthly payment is " +  loan.findMonthlyPayment() + " dollars!");
+      System.out.println("Your monthly payment is " +  loan.findMonthlyPayment() + " dollars per month!");
       System.out.println();
 
       //Exit UI
       System.out.println("Summary of your inputs!");
       System.out.println();
-      System.out.println("Car Loan price: " + loan.carLoan);
+      System.out.println("Car Loan price: " + loan.carLoan + " dollars.");
       System.out.println();
-      System.out.println("Car Loan length: " + loan.loanLength);
+      System.out.println("Car Loan length: " + loan.loanLength + " years.");
       System.out.println();
-      System.out.println("Downpayment: " + loan.downPayment);
+      System.out.println("Downpayment: " + loan.downPayment + " dollars.");
       System.out.println();
-      System.out.println("Interest rate: " + loan.interestRate);
+      System.out.println("Interest rate: " + loan.interestRate + "%");
       System.out.println();
       System.out.println("Thank you for using our program!");
       System.out.println();
